@@ -1,0 +1,15 @@
+1. install mini partition tool
+2. windows os: HDD/SSD: assign driver letter for UEFI partition (fat 32 which is 100MB drive)
+3. download explorer++ and run as administrator, copy hackintosh efi folder
+4. use below commands
+
+
+
+clover:
+
+bcdedit /set {bootmgr} path \EFI\CLOVER\CLOVERX64.efi
+
+
+Open Core:
+
+bcdedit /set {bootmgr} path \EFI\OC\OpenCore.efi
